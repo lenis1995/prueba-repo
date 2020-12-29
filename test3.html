@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+       <h1>My first Javascript Script</h1> 
+       <br><br>
+       <p>This is a simple test with an script</p>
+       <br><br>
+       <img id="light" src="../images/off.png" alt="Light Off" style="width: 200px;height: 150px;">
+       <br>
+       <button type="button" onclick="turn('ON')">LIGHTS ON!!</button>
+       <button type="button" onclick="turn('OFF')">LIGHTS OFF!!</button>
+
+       <script>
+          function turn(sw){
+              var status;
+              if(sw=="ON"){
+                  status="/images/on.jpg"
+              }else{
+                  status="/images/off.png"
+              }
+            document.getElementById("light").src=status;
+          }
+       </script>
+    <!--
+       <button type="button" onclick="setStyle()">This button shown you the current date</button>
+       <br><br><br><br>
+       <p id="obj"></p>
+
+       <script>
+           function setStyle(){
+               document.getElementById('obj').innerHTML=Date();
+               document.getElementById('obj').style.backgroundColor="green";
+               document.getElementById('obj').style.color="white";
+               document.getElementById('obj').style.fontSize="10px";
+               document.getElementById('obj').style.fontFamily="verdana";
+           }
+       </script>
+    -->
+    </body>
+</html>
